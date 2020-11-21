@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "card-reader.Android", "card-reader\card-reader.Android\card-reader.Android.csproj", "{08E0B7C3-9EB6-420F-A0AB-9E05C59AAEB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "card-reader", "card-reader\card-reader\card-reader.csproj", "{79F45BB9-8FE2-4C9B-8D45-5E5118A7FBD8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08E0B7C3-9EB6-420F-A0AB-9E05C59AAEB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08E0B7C3-9EB6-420F-A0AB-9E05C59AAEB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08E0B7C3-9EB6-420F-A0AB-9E05C59AAEB0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{08E0B7C3-9EB6-420F-A0AB-9E05C59AAEB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08E0B7C3-9EB6-420F-A0AB-9E05C59AAEB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08E0B7C3-9EB6-420F-A0AB-9E05C59AAEB0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{79F45BB9-8FE2-4C9B-8D45-5E5118A7FBD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79F45BB9-8FE2-4C9B-8D45-5E5118A7FBD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79F45BB9-8FE2-4C9B-8D45-5E5118A7FBD8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{79F45BB9-8FE2-4C9B-8D45-5E5118A7FBD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79F45BB9-8FE2-4C9B-8D45-5E5118A7FBD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79F45BB9-8FE2-4C9B-8D45-5E5118A7FBD8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {12523271-D690-4965-8DA8-3827919A8550}
+	EndGlobalSection
+EndGlobal
