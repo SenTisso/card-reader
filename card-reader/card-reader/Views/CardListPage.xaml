@@ -59,7 +59,7 @@
                     CornerRadius="7"/>
             </Grid>
         <Button
-            BackgroundColor="#BB86FC"
+            BackgroundColor="{StaticResource Primary}"
             Text="+"
             FontSize="36"
             TextColor="#fff"

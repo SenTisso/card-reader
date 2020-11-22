@@ -3,6 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="card_reader.App">
     <Application.Resources>
-
+        <ResourceDictionary>
+            <Color x:Key="Primary">#BB86FC</Color>
+            <Color x:Key="Background">#121212</Color>
+            <Color x:Key="SecondBackground">#1F1F1F</Color>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

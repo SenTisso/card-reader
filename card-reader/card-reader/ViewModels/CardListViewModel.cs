@@ -8,18 +8,14 @@ namespace card_reader.ViewModels
 {
     public class CardListViewModel : BaseViewModel
     {
+        // TODO: takto se nastavuji custom properties u samotnych ViewModelu
+        public string Roman { get; }
+
+
         public CardListViewModel()
         {
             Title = "Big PP CardList";
             Roman = "roman";
-        }
-        
-        // TODO: takto se nastavuji custom properties u samotnych ViewModelu
-        string roman = string.Empty;
-        public string Roman
-        {
-            get { return roman; }
-            set { SetProperty(ref roman, value); }
         }
     }
 }
