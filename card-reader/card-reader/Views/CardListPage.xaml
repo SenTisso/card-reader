@@ -71,6 +71,7 @@
             HeightRequest="80"
             WidthRequest="80"
             CornerRadius="40"
+            Clicked="OnAddCard"
         >
         </Button>
         </AbsoluteLayout>
