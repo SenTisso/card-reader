@@ -21,46 +21,39 @@
                     <ColumnDefinition Width="50*" />
                     <ColumnDefinition Width="50*"/>
                 </Grid.ColumnDefinitions>
-                <!-- TODO: a takto se vypisuji ty properties z ViewModelu - {Binding Title} 
-                <Label Text="{Binding Title}"
-                       VerticalOptions="CenterAndExpand" 
-                       HorizontalOptions="CenterAndExpand" />
-            
-                <Label Text="{Binding Roman}"
-                       VerticalOptions="CenterAndExpand" 
-                       HorizontalOptions="CenterAndExpand" />-->
+                
                 <ImageButton 
                     Grid.Row="0"
                     Grid.Column="0"
-                    Source="card.png"
+                    Source="billa.png"
                     HorizontalOptions="Center"
                     VerticalOptions="CenterAndExpand"
                     CornerRadius="7"/>
                 <ImageButton
                     Grid.Row="0"
                     Grid.Column="1"
-                    Source="card.png"
+                    Source="billa.png"
                     HorizontalOptions="Center"
                     VerticalOptions="CenterAndExpand"
                     CornerRadius="7"/>
                 <ImageButton
                     Grid.Row="1"
                     Grid.Column="0"
-                    Source="card.png"
+                    Source="billa.png"
                     HorizontalOptions="Center"
                     VerticalOptions="CenterAndExpand"
                     CornerRadius="7"/>
                 <ImageButton
                     Grid.Row="1"
                     Grid.Column="1"
-                    Source="card.png"
+                    Source="billa.png"
                     HorizontalOptions="Center"
                     VerticalOptions="CenterAndExpand"
                     CornerRadius="7"/>
                 <ImageButton
                     Grid.Row="2"
                     Grid.Column="0"
-                    Source="card.png"
+                    Source="billa.png"
                     HorizontalOptions="Center"
                     VerticalOptions="CenterAndExpand"
                     CornerRadius="7"/>
