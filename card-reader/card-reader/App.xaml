@@ -5,8 +5,15 @@
     <Application.Resources>
         <ResourceDictionary>
             <Color x:Key="Primary">#BB86FC</Color>
+            <Color x:Key="Foreground">#FFFFFF</Color>
             <Color x:Key="Background">#121212</Color>
             <Color x:Key="SecondBackground">#1F1F1F</Color>
+            <Thickness x:Key="PagePadding">16</Thickness>
+
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="{StaticResource SecondBackground}"/>
+                <Setter Property="BarTextColor" Value="{StaticResource Foreground}"/>
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

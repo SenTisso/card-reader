@@ -11,8 +11,8 @@ namespace card_reader
         {
             InitializeComponent();
 
-            MainPage = new ChooseCardPage(); // TODO: kdyztak sem pokazdy mrdnouy treba tu stranku, na ktery se zrovna pracuje, jakoze aby se rovnou nacetla idk
-            // TODO: jinak hlavni stranka bude CardList
+            MainPage = new NavigationPage(new CardListPage());
+            // TODO: default stranka je CardList
         }
 
         protected override void OnStart()
