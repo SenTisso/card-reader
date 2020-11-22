@@ -11,6 +11,7 @@
 
     <ContentPage.Content>
         <StackLayout>
+            <!-- TODO: a takto se vypisuji ty properties z ViewModelu - {Binding Title} -->
             <Label Text="{Binding Title}"
                    VerticalOptions="CenterAndExpand" 
                    HorizontalOptions="CenterAndExpand" />
