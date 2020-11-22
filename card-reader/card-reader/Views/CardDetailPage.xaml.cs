@@ -1,16 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
-namespace card_reader
+namespace card_reader.Views
 {
-    public partial class MainPage : ContentPage
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class CardDetailPage : ContentPage
     {
-        public MainPage()
+        public CardDetailPage()
         {
             InitializeComponent();
         }

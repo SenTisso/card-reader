@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using card_reader.Views;
 
 namespace card_reader
 {
@@ -10,7 +11,8 @@ namespace card_reader
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new CardListPage(); // TODO: kdyztak sem pokazdy mrdnouy treba tu stranku, na ktery se zrovna pracuje, jakoze aby se rovnou nacetla idk
+            // TODO: jinak hlavni stranka bude CardList
         }
 
         protected override void OnStart()
