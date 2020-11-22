@@ -19,8 +19,9 @@ namespace card_reader.Views
         }
         async void OnCardSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            Debug.WriteLine("askhjndaslhjdks;aljd");
+            await Navigation.PushAsync(new NewCardPage { });
         }
+
         // takto se nastavi dynamicky barva toho toolbaru
         /*protected override async void OnAppearing()
         {

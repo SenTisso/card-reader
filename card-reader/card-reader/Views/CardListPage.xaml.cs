@@ -15,9 +15,14 @@ namespace card_reader.Views
             InitializeComponent();
         }
 
+        async void OnViewCard(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new CardDetailPage { });
+        }
+
         async void OnAddCard(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new NewCardPage { });
+            await Navigation.PushAsync(new ChooseCardPage { });
         }
     }
 }

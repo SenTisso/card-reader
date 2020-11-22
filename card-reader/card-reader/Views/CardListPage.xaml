@@ -31,35 +31,40 @@
                     Source="billa.png"
                     HorizontalOptions="Center"
                     VerticalOptions="CenterAndExpand"
-                    CornerRadius="7"/>
+                    CornerRadius="7"
+                    Clicked="OnViewCard"/>
                 <ImageButton
                     Grid.Row="0"
                     Grid.Column="1"
                     Source="billa.png"
                     HorizontalOptions="Center"
                     VerticalOptions="CenterAndExpand"
-                    CornerRadius="7"/>
+                    CornerRadius="7"
+                    Clicked="OnViewCard"/>
                 <ImageButton
                     Grid.Row="1"
                     Grid.Column="0"
                     Source="billa.png"
                     HorizontalOptions="Center"
                     VerticalOptions="CenterAndExpand"
-                    CornerRadius="7"/>
+                    CornerRadius="7"
+                    Clicked="OnViewCard"/>
                 <ImageButton
                     Grid.Row="1"
                     Grid.Column="1"
                     Source="billa.png"
                     HorizontalOptions="Center"
                     VerticalOptions="CenterAndExpand"
-                    CornerRadius="7"/>
+                    CornerRadius="7"
+                    Clicked="OnViewCard"/>
                 <ImageButton
                     Grid.Row="2"
                     Grid.Column="0"
                     Source="billa.png"
                     HorizontalOptions="Center"
                     VerticalOptions="CenterAndExpand"
-                    CornerRadius="7"/>
+                    CornerRadius="7"
+                    Clicked="OnViewCard"/>
             </Grid>
         <Button
             BackgroundColor="{StaticResource Primary}"
