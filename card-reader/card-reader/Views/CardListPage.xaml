@@ -11,60 +11,60 @@
 
     <ContentPage.Content>
         <AbsoluteLayout>
-        <Grid Padding="8">
-            <Grid.RowDefinitions >
-                <RowDefinition Height="90" />
-                <RowDefinition Height="90" />
-                <RowDefinition Height="90" />
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="50*" />
-                <ColumnDefinition Width="50*"/>
-            </Grid.ColumnDefinitions>
-            <!-- TODO: a takto se vypisuji ty properties z ViewModelu - {Binding Title} 
-            <Label Text="{Binding Title}"
-                   VerticalOptions="CenterAndExpand" 
-                   HorizontalOptions="CenterAndExpand" />
+            <Grid Padding="8" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+                <Grid.RowDefinitions >
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="100" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*" />
+                    <ColumnDefinition Width="50*"/>
+                </Grid.ColumnDefinitions>
+                <!-- TODO: a takto se vypisuji ty properties z ViewModelu - {Binding Title} 
+                <Label Text="{Binding Title}"
+                       VerticalOptions="CenterAndExpand" 
+                       HorizontalOptions="CenterAndExpand" />
             
-            <Label Text="{Binding Roman}"
-                   VerticalOptions="CenterAndExpand" 
-                   HorizontalOptions="CenterAndExpand" />-->
-            <ImageButton 
-                Grid.Row="0"
-                Grid.Column="0"
-                Source="card.png"
-                HorizontalOptions="Center"
-                VerticalOptions="CenterAndExpand"
-                CornerRadius="7"/>
-            <ImageButton
-                Grid.Row="0"
-                Grid.Column="1"
-                Source="card.png"
-                HorizontalOptions="Center"
-                VerticalOptions="CenterAndExpand"
-                CornerRadius="7"/>
-            <ImageButton
-                Grid.Row="1"
-                Grid.Column="0"
-                Source="card.png"
-                HorizontalOptions="Center"
-                VerticalOptions="CenterAndExpand"
-                CornerRadius="7"/>
-            <ImageButton
-                Grid.Row="1"
-                Grid.Column="1"
-                Source="card.png"
-                HorizontalOptions="Center"
-                VerticalOptions="CenterAndExpand"
-                CornerRadius="7"/>
-            <ImageButton
-                Grid.Row="2"
-                Grid.Column="0"
-                Source="card.png"
-                HorizontalOptions="Center"
-                VerticalOptions="CenterAndExpand"
-                CornerRadius="7"/>
-        </Grid>
+                <Label Text="{Binding Roman}"
+                       VerticalOptions="CenterAndExpand" 
+                       HorizontalOptions="CenterAndExpand" />-->
+                <ImageButton 
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Source="card.png"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    CornerRadius="7"/>
+                <ImageButton
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Source="card.png"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    CornerRadius="7"/>
+                <ImageButton
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Source="card.png"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    CornerRadius="7"/>
+                <ImageButton
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Source="card.png"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    CornerRadius="7"/>
+                <ImageButton
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Source="card.png"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    CornerRadius="7"/>
+            </Grid>
         <Button
             BackgroundColor="#BB86FC"
             Text="+"
