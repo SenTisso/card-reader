@@ -17,6 +17,8 @@ namespace card_reader.ViewModels
 
         public ChooseCardViewModel()
         {
+            Title = "Vyberte kartu";
+
             SupportedCards = new ObservableCollection<SupportedCard>();
 
             setSupportedCards();

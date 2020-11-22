@@ -9,11 +9,6 @@
         <viewModels:ChooseCardViewModel />
     </ContentPage.BindingContext>
 
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Smazat" />
-        <ToolbarItem Text="Smazat" Order="Secondary" />
-    </ContentPage.ToolbarItems>
-
     <ContentPage.Content>
         <StackLayout
             BackgroundColor="{StaticResource Background}"
