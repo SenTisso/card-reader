@@ -10,11 +10,12 @@
     </ContentPage.BindingContext>
 
     <ContentPage.Content>
+        <AbsoluteLayout>
         <Grid Padding="8">
             <Grid.RowDefinitions >
-                <RowDefinition Height="95" />
-                <RowDefinition Height="95" />
-                <RowDefinition Height="95" />
+                <RowDefinition Height="90" />
+                <RowDefinition Height="90" />
+                <RowDefinition Height="90" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="50*" />
@@ -64,6 +65,19 @@
                 VerticalOptions="CenterAndExpand"
                 CornerRadius="7"/>
         </Grid>
+        <Button
+            BackgroundColor="#BB86FC"
+            Text="+"
+            FontSize="36"
+            TextColor="#fff"
+            AbsoluteLayout.LayoutFlags="PositionProportional"  
+            AbsoluteLayout.LayoutBounds="0.95,0.95,72,72"
+            HeightRequest="80"
+            WidthRequest="80"
+            CornerRadius="40"
+        >
+        </Button>
+        </AbsoluteLayout>
     </ContentPage.Content>
 
 </ContentPage>
