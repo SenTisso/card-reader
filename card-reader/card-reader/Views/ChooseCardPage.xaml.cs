@@ -16,5 +16,12 @@ namespace card_reader.Views
         {
             InitializeComponent();
         }
+
+        // takto se nastavi dynamicky barva toho toolbaru
+        /*protected override async void OnAppearing()
+        {
+            ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.Black;
+            ((NavigationPage)Application.Current.MainPage).BarTextColor = Color.OrangeRed;
+        }*/
     }
 }
