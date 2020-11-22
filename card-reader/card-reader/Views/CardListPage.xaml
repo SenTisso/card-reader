@@ -10,8 +10,11 @@
     </ContentPage.BindingContext>
 
     <ContentPage.Content>
-        <AbsoluteLayout>
-            <Grid Padding="8" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+        <AbsoluteLayout
+            BackgroundColor="{StaticResource Background}"
+            Padding="{StaticResource PagePadding}">
+            
+            <Grid AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
                 <Grid.RowDefinitions >
                     <RowDefinition Height="100" />
                     <RowDefinition Height="100" />
