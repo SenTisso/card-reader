@@ -8,7 +8,11 @@
         <viewModels:NewCardViewModel />
     </ContentPage.BindingContext>
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Example Item"
+        <ToolbarItem Text="zrušit"
+                 IconImageSource="example_icon.png"
+                 Order="Primary"
+                 Priority="0" />
+        <ToolbarItem Text="uložit"
                  IconImageSource="example_icon.png"
                  Order="Primary"
                  Priority="0" />
