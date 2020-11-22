@@ -11,7 +11,7 @@ namespace card_reader
         {
             InitializeComponent();
 
-            MainPage = new ChooseCardPage(); // TODO: kdyztak sem pokazdy mrdnouy treba tu stranku, na ktery se zrovna pracuje, jakoze aby se rovnou nacetla idk
+            MainPage = new NewCardPage(); // TODO: kdyztak sem pokazdy mrdnouy treba tu stranku, na ktery se zrovna pracuje, jakoze aby se rovnou nacetla idk
             // TODO: jinak hlavni stranka bude CardList
         }
 
