@@ -9,10 +9,16 @@
     </ContentPage.BindingContext>  
     
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="{Binding Title}"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <FlexLayout BackgroundColor="#FED501" Direction="Column" AlignItems="Center">
+            <Image Source="billa.png" WidthRequest="250"></Image>
+            <Frame BackgroundColor="#FFF" WidthRequest="300" Margin="{StaticResource PagePadding}" CornerRadius="10" VerticalOptions="Start" HeightRequest="200">
+                <FlexLayout Direction="Column" AlignItems="Center">
+                    <Image Source="barcode.png" WidthRequest="250" HeightRequest="150"></Image>
+                    <Label Text="0 4560 2456 8" 
+                       FontSize="Title" 
+                       HorizontalTextAlignment="Center"/>
+                </FlexLayout>
+            </Frame>
+        </FlexLayout>
     </ContentPage.Content>
 </ContentPage>
