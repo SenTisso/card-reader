@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.Diagnostics;
 
 namespace card_reader.Views
 {
@@ -16,7 +17,10 @@ namespace card_reader.Views
         {
             InitializeComponent();
         }
-
+        async void OnCardSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            Debug.WriteLine("askhjndaslhjdks;aljd");
+        }
         // takto se nastavi dynamicky barva toho toolbaru
         /*protected override async void OnAppearing()
         {

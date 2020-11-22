@@ -20,7 +20,9 @@
                     <ListView
                         VerticalScrollBarVisibility="Never"
                         RowHeight="56"
-                        ItemsSource="{Binding SupportedCards}">
+                        ItemsSource="{Binding SupportedCards}"
+                        ItemSelected="OnCardSelected"		
+                        >
 
                         <ListView.ItemTemplate>
                             <DataTemplate>
