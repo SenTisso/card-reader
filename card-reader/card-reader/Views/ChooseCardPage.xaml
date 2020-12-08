@@ -21,7 +21,7 @@
                         VerticalScrollBarVisibility="Never"
                         RowHeight="56"
                         ItemsSource="{Binding SupportedCards}"
-                        ItemSelected="OnCardSelected"		
+                        ItemTapped="ListView_ItemTapped"
                         >
 
                         <ListView.ItemTemplate>

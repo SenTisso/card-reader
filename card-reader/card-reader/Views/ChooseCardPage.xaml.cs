@@ -17,9 +17,11 @@ namespace card_reader.Views
         {
             InitializeComponent();
         }
-        async void OnCardSelected(object sender, SelectedItemChangedEventArgs e)
+
+        async void ListView_ItemTapped(System.Object sender, Xamarin.Forms.ItemTappedEventArgs e)
         {
             ((ListView)sender).SelectedItem = null;
+
             await Navigation.PushAsync(new NewCardPage { });
         }
 
