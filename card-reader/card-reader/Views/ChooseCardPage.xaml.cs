@@ -19,6 +19,7 @@ namespace card_reader.Views
         }
         async void OnCardSelected(object sender, SelectedItemChangedEventArgs e)
         {
+            ((ListView)sender).SelectedItem = null;
             await Navigation.PushAsync(new NewCardPage { });
         }
 

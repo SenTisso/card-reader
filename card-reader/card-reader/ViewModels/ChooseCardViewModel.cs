@@ -19,33 +19,7 @@ namespace card_reader.ViewModels
         {
             Title = "Vyberte kartu";
 
-            SupportedCards = new ObservableCollection<SupportedCard>();
-
-            setSupportedCards();
-        }
-
-        private void setSupportedCards()
-        {
-            SupportedCards.Add(new SupportedCard(0, "Billa", "billa.png"));
-            SupportedCards.Add(new SupportedCard(1, "Tesco", "tesco.png"));
-            SupportedCards.Add(new SupportedCard(2, "Penny", "penny.png"));
-            SupportedCards.Add(new SupportedCard(3, "IKEA", "ikea.png"));
-            /*SupportedCards.Add(new SupportedCard(4, "Billa", "billa.png"));
-            SupportedCards.Add(new SupportedCard(5, "Tesco", "tesco.png"));
-            SupportedCards.Add(new SupportedCard(6, "Penny", "penny.png"));
-            SupportedCards.Add(new SupportedCard(7, "IKEA", "ikea.png"));
-            SupportedCards.Add(new SupportedCard(8, "Billa", "billa.png"));
-            SupportedCards.Add(new SupportedCard(9, "Tesco", "tesco.png"));
-            SupportedCards.Add(new SupportedCard(10, "Penny", "penny.png"));
-            SupportedCards.Add(new SupportedCard(11, "IKEA", "ikea.png"));
-            SupportedCards.Add(new SupportedCard(12, "Billa", "billa.png"));
-            SupportedCards.Add(new SupportedCard(13, "Tesco", "tesco.png"));
-            SupportedCards.Add(new SupportedCard(14, "Penny", "penny.png"));
-            SupportedCards.Add(new SupportedCard(15, "IKEA", "ikea.png"));
-            SupportedCards.Add(new SupportedCard(16, "Billa", "billa.png"));
-            SupportedCards.Add(new SupportedCard(17, "Tesco", "tesco.png"));
-            SupportedCards.Add(new SupportedCard(18, "Penny", "penny.png"));
-            SupportedCards.Add(new SupportedCard(19, "IKEA", "ikea.png"));*/
+            SupportedCards = SupportedCard.getSupportedCards();
         }
     }
 }

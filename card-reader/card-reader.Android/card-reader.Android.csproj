@@ -16,7 +16,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -90,7 +89,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\card-reader\card-reader.csproj">
-      <Project>{D1C0AC7E-6DB3-459A-B3F8-4F932BA52339}</Project>
+      <Project>{79F45BB9-8FE2-4C9B-8D45-5E5118A7FBD8}</Project>
       <Name>card-reader</Name>
     </ProjectReference>
   </ItemGroup>
