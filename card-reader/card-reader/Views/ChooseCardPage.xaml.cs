@@ -22,7 +22,7 @@ namespace card_reader.Views
         {
             ((ListView)sender).SelectedItem = null;
 
-            await Navigation.PushAsync(new NewCardPage { });
+            await Navigation.PushAsync(new CameraPage { });
         }
 
         // takto se nastavi dynamicky barva toho toolbaru
