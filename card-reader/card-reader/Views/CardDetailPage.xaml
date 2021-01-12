@@ -4,17 +4,13 @@
              xmlns:viewModels="clr-namespace:card_reader.ViewModels;assembly=card-reader"
              x:Class="card_reader.Views.CardDetailPage">
     
-    <ContentPage.BindingContext>  
-        <viewModels:CardDetailViewModel />  
-    </ContentPage.BindingContext>  
-    
     <ContentPage.Content>
         <FlexLayout BackgroundColor="#FED501" Direction="Column" AlignItems="Center">
             <Image Source="billa.png" WidthRequest="250"></Image>
             <Frame BackgroundColor="#FFF" WidthRequest="300" Margin="{StaticResource PagePadding}" CornerRadius="10" VerticalOptions="Start" HeightRequest="200">
                 <FlexLayout Direction="Column" AlignItems="Center">
                     <Image Source="barcode.png" WidthRequest="250" HeightRequest="150"></Image>
-                    <Label Text="0 4560 2456 8" 
+                    <Label Text="{Binding Card.BarcodeContent}" 
                        FontSize="Title" 
                        HorizontalTextAlignment="Center"/>
                 </FlexLayout>

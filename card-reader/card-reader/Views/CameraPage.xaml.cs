@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading.Tasks;
+using card_reader.Database;
+using card_reader.Models;
+using card_reader.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using ZXing;
@@ -17,14 +20,40 @@ namespace card_reader.Views
             InitializeComponent();
         }
 
-        public void Handle_OnScanResult(Result result)
+        async public void Handle_OnScanResult(Result result)
         {
-            Debug.WriteLine("FINISH");
-            Debug.WriteLine(result.Text);
-            // await Navigation.PushAsync(new CardDetailPage() { });
+            // TODO: toto nefunguje?
             
+            Debug.WriteLine("SCANNED");
+
+            // ulozi kartu do DB
+            int id = await App.Database.CreateCard(new Card()
+            {
+                Name = "test card",
+                BarcodeContent = result.Text,
+                BarcodeFormat = result.BarcodeFormat
+            });
+            
+            Debug.WriteLine("ID");
+            Debug.WriteLine(id);
+
+            if (id >= 0)
+            {
+                // TODO: tady mozna nebude potreba select, proste pouzit tu kartu, ktera se uklada. Ale musi se uspesne ulozit
+                Debug.WriteLine("GETTING CARD");
+                Card card = await App.Database.GetCard(id);
+                Debug.WriteLine(card.BarcodeContent);
+
+                // spusti stranku CardDetail a preda ji CardDetailViewModel, cemuz preda tu kartu
+                await Navigation.PushAsync(new CardDetailPage()
+                {
+                    BindingContext = new CardDetailViewModel(card)
+                });
+            }
+
+
             // MessagingCenter.Send<CameraPage>(this, "Hi");
-            
+
             // var bitmapMatrix = new MultiFormatWriter().encode(result.Text, result.BarcodeFormat, 800, 400);
             //
             // var width = bitmapMatrix.Width;
