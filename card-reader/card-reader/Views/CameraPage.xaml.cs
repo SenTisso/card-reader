@@ -15,16 +15,23 @@ namespace card_reader.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CameraPage : ZXingScannerPage
     {
-        public CameraPage()
+        private string Name;
+        private string Color;
+        
+        public CameraPage(string Name, string Color)
         {
             InitializeComponent();
+
+            this.Name = Name;
+            this.Color = Color;
         }
 
         async public void Handle_OnScanResult(Result result)
         {
             Card SavedCard = new Card()
             {
-                Name = "test card",
+                Name = this.Name,
+                Color = this.Color,
                 BarcodeContent = result.Text,
                 BarcodeFormat = result.BarcodeFormat
             };
