@@ -37,7 +37,7 @@ namespace card_reader.Views
                 Device.BeginInvokeOnMainThread(() =>
                 {
                     // spusti stranku CardDetail a preda ji CardDetailViewModel, cemuz preda tu kartu
-                    Navigation.PushAsync(new CardDetailPage(SavedCard));
+                    Navigation.PushAsync(new CardDetailPage(SavedCard, true));
                 });
             }
         }
