@@ -14,16 +14,25 @@ namespace card_reader.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CardDetailPage : ContentPage
     {
+        /** pokud tato stranka byla otevrena z formulare na tvorbu karty */
         private bool fromNewCardPage = false;
+        private Card Card;
         
         public CardDetailPage(Card Card, bool fromNewCardPage = false)
         {
             InitializeComponent();
 
             this.fromNewCardPage = fromNewCardPage;
+            this.Card = Card;
 
             // kartu preda CardDetailViewModel, kde se nastavi promenny a ten ViewModel se da jako BindingContext
             this.BindingContext = new CardDetailViewModel(Card);
+        }
+
+        async void OnCardDeleted(object sender, EventArgs e)
+        {
+            await App.Database.DeleteCard(this.Card);
+            await this.Navigation.PopAsync();
         }
 
         protected override void OnAppearing()

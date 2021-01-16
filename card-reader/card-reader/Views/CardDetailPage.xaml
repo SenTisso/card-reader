@@ -5,6 +5,10 @@
              xmlns:zxcm="clr-namespace:ZXing.Common;assembly=zxing.portable"
              x:Class="card_reader.Views.CardDetailPage">
     
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Smazat" Clicked="OnCardDeleted" Order="Secondary" />
+    </ContentPage.ToolbarItems>
+    
     <ContentPage.Content>
         <FlexLayout BackgroundColor="#FED501" Direction="Column" AlignItems="Center">
             <Image Source="billa.png" WidthRequest="250"></Image>
