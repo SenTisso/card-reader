@@ -22,32 +22,22 @@ namespace card_reader.Views
 
         async public void Handle_OnScanResult(Result result)
         {
-            // TODO: toto nefunguje?
-            
-            Debug.WriteLine("SCANNED");
-
-            // ulozi kartu do DB
-            int id = await App.Database.CreateCard(new Card()
+            Card SavedCard = new Card()
             {
                 Name = "test card",
                 BarcodeContent = result.Text,
                 BarcodeFormat = result.BarcodeFormat
-            });
-            
-            Debug.WriteLine("ID");
-            Debug.WriteLine(id);
+            };
+
+            // ulozi kartu do DB
+            int id = await App.Database.CreateCard(SavedCard);
 
             if (id >= 0)
             {
-                // TODO: tady mozna nebude potreba select, proste pouzit tu kartu, ktera se uklada. Ale musi se uspesne ulozit
-                Debug.WriteLine("GETTING CARD");
-                Card card = await App.Database.GetCard(id);
-                Debug.WriteLine(card.BarcodeContent);
-
-                // spusti stranku CardDetail a preda ji CardDetailViewModel, cemuz preda tu kartu
-                await Navigation.PushAsync(new CardDetailPage()
+                Device.BeginInvokeOnMainThread(() =>
                 {
-                    BindingContext = new CardDetailViewModel(card)
+                    // spusti stranku CardDetail a preda ji CardDetailViewModel, cemuz preda tu kartu
+                    Navigation.PushAsync(new CardDetailPage(new CardDetailViewModel(SavedCard)));
                 });
             }
 

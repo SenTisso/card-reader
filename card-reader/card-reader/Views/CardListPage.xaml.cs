@@ -17,6 +17,7 @@ namespace card_reader.Views
 
         async void OnViewCard(object sender, EventArgs e)
         {
+            // TODO: select kartu a predat ji CardDetailPage
             await Navigation.PushAsync(new CardDetailPage { });
         }
 
