@@ -10,8 +10,11 @@
     </ContentPage.ToolbarItems>
     
     <ContentPage.Content>
-        <FlexLayout BackgroundColor="#FED501" Direction="Column" AlignItems="Center">
-            <Image Source="billa.png" WidthRequest="250"></Image>
+        <FlexLayout BackgroundColor="{Binding Color}" Direction="Column" AlignItems="Center">
+            <Label Text="{Binding Name}"
+                FontSize="Title"
+                TextColor="Black"
+            />
             <Frame BackgroundColor="#FFF" WidthRequest="300" Margin="{StaticResource PagePadding}" CornerRadius="10" VerticalOptions="Start" HeightRequest="200">
                 <FlexLayout Direction="Column" AlignItems="Center">
                     <zxing:ZXingBarcodeImageView WidthRequest="250" HeightRequest="150" BarcodeValue="{Binding BarcodeContent}" BarcodeFormat="{Binding BarcodeFormat}">
