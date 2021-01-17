@@ -35,7 +35,9 @@
                     </zxing:ZXingBarcodeImageView>
                     
                     <Label Text="{Binding BarcodeContent}" 
-                           FontSize="Title"
+                           FontSize="20"
+                           TextColor="#444444"
+                           Margin="0,16,0,0"
                            HorizontalTextAlignment="Center" />
                 </FlexLayout>
             </Frame>
