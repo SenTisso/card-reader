@@ -12,9 +12,11 @@
     <ContentPage.Content>
         <FlexLayout BackgroundColor="{Binding Color}" Direction="Column" AlignItems="Center">
             <Label Text="{Binding Name}"
+                   HorizontalTextAlignment="Center"
                    Margin="0,38,0,32"
                    FontSize="58"
                    FontAttributes="Bold"
+                   Padding="4,0,4,0"
                    TextColor="Black" />
             
             <Frame BackgroundColor="#FFF" WidthRequest="300" Margin="{StaticResource PagePadding}" CornerRadius="10" VerticalOptions="Start" HeightRequest="200">
