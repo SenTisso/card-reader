@@ -63,13 +63,19 @@ namespace card_reader.Views
             {
                 // index je delitelny 2 
                 if (i > 0 && i % 2 == 0) row++; // to znamena, ze je dalsi radek (jelikoz jsou 2 sloupce)
-                ImageButton CardButton = new ImageButton()
+                Button CardButton = new Button()
                 {
-                    Source = "billa.png",
-                    HorizontalOptions = LayoutOptions.Center,
+                    HeightRequest = 100,
+                    HorizontalOptions = LayoutOptions.FillAndExpand,
                     VerticalOptions = LayoutOptions.CenterAndExpand,
                     CornerRadius = 7,
-                    ClassId = SavedCard.ID.ToString()
+                    ClassId = SavedCard.ID.ToString(),
+                    BackgroundColor = Color.FromHex(SavedCard.Color),
+                    Text = SavedCard.Name,
+                    TextColor = Color.Black,
+                    FontSize = 20,
+                    FontAttributes = FontAttributes.Bold,
+                    
                 };
                 CardButton.Clicked += OnViewCard; // prida Clicked event
                 Grid.Children.Add(CardButton, col, row);
@@ -111,9 +117,9 @@ namespace card_reader.Views
 
         async void OnViewCard(object sender, EventArgs e)
         {
-            ImageButton ImageButton = (ImageButton) sender;
+            Button CardButton = (Button) sender;
 
-            Card SavedCard = await App.Database.GetCard(Int32.Parse(ImageButton.ClassId));
+            Card SavedCard = await App.Database.GetCard(Int32.Parse(CardButton.ClassId));
             
             // preda detailu karty kartu
             await Navigation.PushAsync(new CardDetailPage(SavedCard));
