@@ -17,7 +17,7 @@ namespace card_reader.ViewModels
 
         public ChooseCardViewModel()
         {
-            Title = "Vyberte kartu";
+            Title = "Vytvořte novou kartu";
 
             SupportedCards = SupportedCard.getSupportedCards();
         }
