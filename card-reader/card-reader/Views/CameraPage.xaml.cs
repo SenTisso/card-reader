@@ -17,24 +17,19 @@ namespace card_reader.Views
     {
         private string Name;
         private string Color;
+        private Card SavedCard;
         
-        public CameraPage(string Name, string Color)
+        public CameraPage(Card NewCard)
         {
             InitializeComponent();
 
-            this.Name = Name;
-            this.Color = Color;
+            this.SavedCard = NewCard;
         }
 
         async public void Handle_OnScanResult(Result result)
         {
-            Card SavedCard = new Card()
-            {
-                Name = this.Name,
-                Color = this.Color,
-                BarcodeContent = result.Text,
-                BarcodeFormat = result.BarcodeFormat
-            };
+            SavedCard.BarcodeContent = result.Text;
+            SavedCard.BarcodeFormat = result.BarcodeFormat;
 
             // ulozi kartu do DB
             int id = await App.Database.CreateCard(SavedCard);

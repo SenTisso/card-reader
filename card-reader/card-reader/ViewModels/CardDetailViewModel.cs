@@ -12,6 +12,7 @@ namespace card_reader.ViewModels
     public class CardDetailViewModel : BaseViewModel
     {
         public string Name { private set; get; }
+        public string Number { private set; get; }
         public string Color { private set; get; }
         public string BarcodeContent { private set; get; }
         public BarcodeFormat BarcodeFormat { private set; get; }
@@ -20,6 +21,7 @@ namespace card_reader.ViewModels
         {
             Title = "Big PP CardDetail";
             Name = card.Name;
+            Number = card.Number;
             Color = card.Color;
             BarcodeFormat = card.BarcodeFormat;
             BarcodeContent = card.BarcodeContent;
